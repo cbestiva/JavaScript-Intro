@@ -48,82 +48,118 @@
 * <h3> Give the computer a value and it returns a value, thus values are expressions as well. 
 	
 		// values are expressions
-		42
+		console.log(42);
 		//=> 42
-	
-		// addition is an expression
-		2 + 2
-		//=> 4
-	
-		// string concatenation is an expression
-		"hello" + " world"
-		=> "hello world" 
 
+		// addition is an expression
+		console.log(2 + 2);
+		//=> 4
+
+		// string concatenation is an expression
+		console.log("hello" + " world");
+		//=> "hello world"
 
 ## Conditionals: always use Triple Equal "===" or "!=="
 * <h3> Check to see if two values are identical with the "===" comparitor.
 
-		42 === 42
-		=> true
-		
-		3 === "3"
-		=> false
-		
-		// however the double equal sign gives the wrong result
-		3 == "3"
-		=> true
-		
-		2 + 2 === 4
-		=> true
-		
-		"foo" !== "bar"
-		=> true
+		console.log("Always use triple equal sign to test equality.")
+
+		console.log(42 === 42);
+		//=> true
+
+		console.log(3 === "3");
+		//=> false
+
+		// Double equal operator gives the wrong result!!
+		console.log(3 == "3");
+		//=> true
+
+		console.log(2 + 2 === 4);
+		//=> true
+
+		console.log("foo" !== "bar");
+		//=> true
 		
 ## Reference Types: non-identical values that the same contents and are the same type. 
 * <h3> Arrays are unique structures.
 
-		[1,2,3] === [ 2-1, 1+1, 2+1]
-		=> false
-		
-		[1,2,3] === [1,2,3]
-		=> false
+		console.log("Arrays are reference-type data structures.")
+		console.log([1,2,3] === [ 2-1, 1+1, 2+1]);
+		//=> false
+
+		console.log([1,2,3] === [1,2,3]);
+		//=> false
 
 
 ## Undefined
 * <h3> When something is "undefined" it has no value.
 * <h3> Oddly enough "undefined" is a value.
 
-		undefined === undefined
-		=> true
+		console.log("undefined is a value-type.")
+		console.log(undefined === undefined);
+		//=> true
 
 ## False
 * <h3>0, false, null, undefined, Empty String: ""</h3>
+		
 		console.log("False Tester:");
-		if(0) { // Try: 0, "", undefined, null, false. Anything else is true!
+		// Try: 0, "", undefined, null, false. Anything else is true!
+		if(0) { 
 		  console.log(true);
 		} else {
 		  console.log(false);
 		}
 
+## JavaScript Object Literals
+	var micky_mouse = {
+                    "first_name": "Micky",
+                    "last_name": "Mouse",
+                    "address": "Disneyland"
+                  }
+	var micky = {
+                    "first_name": "Micky",
+                    "last_name": "Mouse",
+                    "address": "Disneyland"
+                  }
 
-## If Else
-	console.log("If - else if - else:")
+	// ##### JS Object Literals are reference types
+	// Access a literal value with ".key" syntax!
+	console.log(micky_mouse.first_name);
+	// This also works
+	console.log(micky_mouse["first_name"]);
+
+	console.log("Are JS Object Literals values? ")
+	if(micky_mouse === micky ) {
+	  console.log(true );
+	} else {
+	  console.log(false );
+	}
+
+
+## Conditional (if-else)
+	console.log("if - else if - else:")
 	// var state = "red";
 	var state = "green";
 	// var state = "blue";
 
-	// "message" is an example of a JavaScript object written in json.
+	// "message" is an example of a JavaScript Object Literal.
 	var message = {
                 "failing": "Tests are failing.",
                 "passing": "Tests are passing.",
                 "refactor": "Time to refactor."
               }
 	if (state === "red") {	
+	
 	  console.log(message.failing);
+	  
 	} else if (state === "green") {
+	
 	  console.log(message.passing);
+	  
 	} else { // Time to refactor.
+	
 	  console.log(message.refactor);
+	  
 	}
 
 ## While loop
@@ -131,22 +167,47 @@
 	var b = [1,2,3,4];
 
 	console.log("While Loop:")
+	
 	var i = 0;
+	
 	while(i < a.length){
+	
 		console.log("The element at index " + i + " is: " + a[i]);
-	  i++;
+		i++;
+		
 	}
 
 ## For loop
+
+	var mixed = [1, "two", "three", true];
+	
 	console.log("For Loop:")
 	
-	// Most common mistake is using commas instead of "semicolons" inside the loop 		declaration.
+	// Most common mistake is using commas instead of "semicolons" inside the loop declaration.
 	
-	for(var i = 0; i < a.length; i++) {
-	  console.log("The element at index " + i + " is: " + a[i]);
+	for(var i = 0; i < mixed.length; i++) {
+	
+	  console.log("The element at index " + i + " is: " + mixed[i]);
+	  
 	}
-
 ## Switch Case
+	var expression = "label2"
+
+	switch (expression) {
+	 	case "label1":
+    		console.log("First case: label1");
+    		break;
+		case "label2":
+    		console.log("Second case: label2");
+    		break;
+		case "labelN":
+		    console.log("Nth case: labelN");
+		    break;
+		default:
+		    console.log("Default case.");
+		    break;
+		}
+
 
 ## Exercise: Implement a routine that checks to see if two arrays are identical.
 

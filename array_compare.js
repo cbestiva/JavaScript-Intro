@@ -47,11 +47,14 @@ console.log("undefined is a value-type.")
 console.log(undefined === undefined);
 //=> true
 
-var mixed = [1, "two", "three", true];
-
-var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "December" ];
-
-console.log("The month array: \n" + months);
+// ##########  FALSE ###########
+console.log("False Tester:");
+// Try: 0, "", undefined, null, false. Anything else is true!
+if(0) {
+  console.log(true);
+} else {
+  console.log(false);
+}
 
 // ############# JavaScript Object Literals ################
 var micky_mouse = {
@@ -76,14 +79,6 @@ if(micky_mouse === micky ) {
   console.log(true );
 } else {
   console.log(false );
-}
-
-// ##########  FALSE ###########
-console.log("False Tester:");
-if(0) { // Try: 0, "", undefined, null, false. Anything else is true!
-  console.log(true);
-} else {
-  console.log(false);
 }
 
 // ################  Conditional ##############
@@ -118,8 +113,7 @@ while(i < a.length){
 }
 
 // ###########  For Loop:  ############
-var a = [1,2,3,4];
-var b = [1,2,3,4];
+var mixed = [1, "two", "three", true];
 console.log("For Loop:")
 // Most common mistake is using commas instead of "semicolons" inside the loop declaration.
 for(var i = 0; i < mixed.length; i++) {
@@ -145,7 +139,6 @@ switch (expression) {
     console.log("Default case.");
     break;
 }
-
 
 
 // Since arrays are reference types,

@@ -1,62 +1,55 @@
+
+console.log("The file: array_compare.js loaded and this statement ran.");
+
 // ############### Values and Expressions ############
-// values are expressions
-console.log(42);
-//=> 42
 
-// addition is an expression
-console.log(2 + 2);
-//=> 4
+console.log(42); //=> 42. Values are expressions.
 
-// string concatenation is an expression
-console.log("hello" + " world");
-//=> "hello world"
+console.log(2 + 2); //=> 4. Arithmetic operations are expressions.
 
+console.log("hello" + " world"); //=> "hello world". String concatenation is an expression.
 
 // ################ Equality #####################
 // Always use the "triple equal" operator to test for equality!
 console.log("Always use triple equal sign to test equality.")
 
-console.log(42 === 42);
-//=> true
+console.log(42 === 42); //=> true
 
-console.log(3 === "3");
-//=> false
+console.log(3 === "3"); //=> false
 
-// Double equal operator gives the wrong result!!
-console.log(3 == "3");
-//=> true
+console.log(3 == "3"); //=> true. Double equal operator gives the wrong result!!
 
-console.log(2 + 2 === 4);
-//=> true
+console.log(2 + 2 === 4); //=> true
 
-console.log("foo" !== "bar");
-//=> true
+console.log("foo" !== "bar"); //=> true
 
 // ############# Reference Type ###################
 //Arrays are unique structures.
+
 console.log("Arrays are reference-type data structures.")
-console.log([1,2,3] === [ 2-1, 1+1, 2+1]);
-//=> false
 
-console.log([1,2,3] === [1,2,3]);
-//=> false
+console.log([1,2,3] === [ 2-1, 1+1, 2+1]);//=> false
 
-// ############# Undefined ######################
-// undefinded is a value
+console.log([1,2,3] === [1,2,3]); //=> false
+
+
+// ############# Undefined is a value ######################
+
 console.log("undefined is a value-type.")
-console.log(undefined === undefined);
-//=> true
+console.log(undefined === undefined); //=> true
 
 // ##########  FALSE ###########
+
 console.log("False Tester:");
-// Try: 0, "", undefined, null, false. Anything else is true!
-if(0) {
+if(0) { // Try: 0, "", undefined, null, false. Anything else is true!
   console.log(true);
 } else {
   console.log(false);
 }
 
 // ############# JavaScript Object Literals ################
+// ##### JS Object Literals are reference types
+
 var micky_mouse = {
                     "first_name": "Micky",
                     "last_name": "Mouse",
@@ -68,11 +61,9 @@ var micky = {
                     "address": "Disneyland"
                   }
 
-// ##### JS Object Literals are reference types
-// Access a literal value with ".key" syntax!
-console.log(micky_mouse.first_name);
-// This also works
-console.log(micky_mouse["first_name"]);
+console.log(micky_mouse.first_name); // Access an object literal value with ".key" syntax!
+
+console.log(micky_mouse["first_name"]); // This also works.
 
 console.log("Are JS Object Literals values? ")
 if(micky_mouse === micky ) {
@@ -82,18 +73,18 @@ if(micky_mouse === micky ) {
 }
 
 // ################  Conditional ##############
-// if - else if - else
-console.log("if - else if - else:")
+
+console.log("if - else if - else:");  // if - else if - else
 // var state = "red";
 var state = "green";
 // var state = "blue";
 
-// "message" is an example of a JavaScript Object Literal.
-var message = {
+var message = {  // "message" is an example of a JavaScript Object Literal.
                 "failing": "Tests are failing.",
                 "passing": "Tests are passing.",
                 "refactor": "Time to refactor."
               }
+
 if (state === "red") {
   console.log(message.failing);
 } else if (state === "green") {
@@ -103,6 +94,7 @@ if (state === "red") {
 }
 
 // ##########  While Loop: ########
+
 var a = [1,2,3,4];
 var b = [1,2,3,4];
 console.log("While Loop:")
@@ -113,9 +105,9 @@ while(i < a.length){
 }
 
 // ###########  For Loop:  ############
+
 var mixed = [1, "two", "three", true];
-console.log("For Loop:")
-// Most common mistake is using commas instead of "semicolons" inside the loop declaration.
+console.log("For Loop:"); // Common mistake: commas instead of "semicolons" inside for loop.
 for(var i = 0; i < mixed.length; i++) {
   console.log("The element at index " + i + " is: " + mixed[i]);
 }
@@ -140,7 +132,7 @@ switch (expression) {
     break;
 }
 
-
+// ################ Exercise #################
 // Since arrays are reference types,
 // we cannot use "===" to compare them.
 // Write a routine that would compare two arrays.

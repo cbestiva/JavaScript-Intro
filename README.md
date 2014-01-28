@@ -219,4 +219,5 @@
 
 
 ## Exercise: Implement a routine that checks to see if two arrays are identical.
+* <h3> Set "result" to "true" if the two arrays are equal, and to "false" if the two arrays are unequal.</h3>
 

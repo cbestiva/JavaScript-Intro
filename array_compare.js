@@ -145,7 +145,8 @@ switch (expression) {
 // we cannot use "===" to compare them.
 // Write a routine that would compare two arrays.
 // Create a variable "result".
-// Set result to true if equal, and to false if inequal.
+// Set "result" to "true" if the two arrays are equal,
+// and to "false" if the two arrays are unequal.
 
 
 

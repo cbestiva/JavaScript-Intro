@@ -31,7 +31,6 @@
 	* <h3> Send requests to the server.</h3>
 	* <h3> Act on response from the server.</h3>
 * <h3> Server side programming with Node.js.</h3>
-* <h3></h3>
 
 ## Resources:
 * <h3> Code School free course on the Developer Tools.</h3>

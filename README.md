@@ -7,19 +7,21 @@
 
 ## Learning Objectives
 * <h3>Overview - why JavaScript</h3>
-* <h3>Use Developer Console</h3>
-* <h3>Understand Comments</h3>
-* <h3>Understand Numbers</h3>
-* <h3>Understand Values & Expressions</h3>
-* <h3>Understand Conditionals</h3>
-* <h3>Understand Reference Types</h3>
-* <h3>Understand Undefined</h3>
-* <h3>Understand False</h3>
-* <h3>Understand JavaScript Object Notaton</h3>
-* <h3>Understand Conditionals (if-else)</h3>
-* <h3>Understand while loop</h3>
-* <h3>Understand for loop</h3>
-* <h3>Understand switch case</h3>
+* <h3>Work Flow: Node, Developer Console</h3>
+* <h3>Understand Data Types</h3>
+* * <h3>Comments</h3>
+* * <h3>Numbers</h3>
+* * <h3>Values & Expressions</h3>
+* * <h3>Conditionals</h3>
+* * <h3>Reference Types</h3>
+* * <h3>Undefined</h3>
+* * <h3>False</h3>
+* <h3>Understand JavaScript Object Literal</h3>
+* <h3>Understand JavaScript Control Flow</h3>
+* * <h3>Conditionals (if-else)</h3>
+* * <h3>While loop</h3>
+* * <h3>For loop</h3>
+* * <h3>Switch case</h3>
 
 ## Why Javascript? We want high performance web sites!
 
@@ -42,16 +44,16 @@
 		http://www.w3schools.com/jsref/default.asp
 
 ## Comments:
-* <h3> Ruby uses '#' to indicate a comment line.
-* <h3> JavaScript uses '//' for line comment.
+* <h3> Ruby uses '#' to indicate a comment line.</h3>
+* <h3> JavaScript uses '//' for line comment.</h3>
 
 ## Numbers:
-* <h3> Ruby has Integers and Floats.
-* <h3> JavaScript we have just Numbers.
+* <h3> Ruby has Integers and Floats.</h3>
+* <h3> JavaScript we have just Numbers.</h3>
 
 ## Values & Expressions
-* <h3> Computers return values when you give them expressions. 
-* <h3> Give the computer a value and it returns a value, thus values are expressions as well. 
+* <h3> Computers return values when you give them expressions. </h3>
+* <h3> Give the computer a value and it returns a value, thus values are expressions as well. </h3>
 	
 		// values are expressions
 		console.log(42);
@@ -66,7 +68,7 @@
 		//=> "hello world"
 
 ## Conditionals: always use Triple Equal "===" or "!=="
-* <h3> Check to see if two values are identical with the "===" comparitor.
+* <h3> Check to see if two values are identical with the "===" comparitor.</h3>
 
 		console.log("Always use triple equal sign to test equality.")
 
@@ -87,7 +89,7 @@
 		//=> true
 		
 ## Reference Types: non-identical values that the same contents and are the same type. 
-* <h3> Arrays are unique structures.
+* <h3> Arrays are unique structures.</h3>
 
 		console.log("Arrays are reference-type data structures.")
 		console.log([1,2,3] === [ 2-1, 1+1, 2+1]);
@@ -98,9 +100,10 @@
 
 
 ## Undefined
-* <h3> When something is "undefined" it has no value.
-* <h3> Oddly enough "undefined" is a value.
+* <h3> When something is "undefined" it has no value.</h3>
+* <h3> Oddly enough "undefined" is a value.</h3>
 
+		
 		console.log("undefined is a value-type.")
 		console.log(undefined === undefined);
 		//=> true

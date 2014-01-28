@@ -1,5 +1,10 @@
 # JavaScript Introduction
 
+## While waiting for lesson to start:
+* <h3>Install Node.js - go to http://nodejs.org/</h3>
+* <h3>Go to your working directory</h3>
+* <h3>Clone repository: https://github.com/spencereldred/JavaScript-Intro</h3>
+
 ## Learning Objectives
 * <h3>Overview - why JavaScript</h3>
 * <h3>Use Developer Console</h3>
@@ -10,7 +15,8 @@
 * <h3>Understand Reference Types</h3>
 * <h3>Understand Undefined</h3>
 * <h3>Understand False</h3>
-* <h3>Understand if else</h3>
+* <h3>Understand JavaScript Object Notaton</h3>
+* <h3>Understand Conditionals (if-else)</h3>
 * <h3>Understand while loop</h3>
 * <h3>Understand for loop</h3>
 * <h3>Understand switch case</h3>

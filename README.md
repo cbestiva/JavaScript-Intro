@@ -9,19 +9,19 @@
 * <h3>Overview - why JavaScript</h3>
 * <h3>Work Flow: Node, Developer Console</h3>
 * <h3>Understand Data Types</h3>
-* * <h3>Comments</h3>
-* * <h3>Numbers</h3>
-* * <h3>Values & Expressions</h3>
-* * <h3>Conditionals</h3>
-* * <h3>Reference Types</h3>
-* * <h3>Undefined</h3>
-* * <h3>False</h3>
+	* <h3>Comments</h3>
+	* <h3>Numbers</h3>
+	* <h3>Values & Expressions</h3>
+	* <h3>Conditionals</h3>
+	* <h3>Reference Types</h3>
+	* <h3>Undefined</h3>
+	* <h3>False</h3>
 * <h3>Understand JavaScript Object Literal</h3>
 * <h3>Understand JavaScript Control Flow</h3>
-* * <h3>Conditionals (if-else)</h3>
-* * <h3>While loop</h3>
-* * <h3>For loop</h3>
-* * <h3>Switch case</h3>
+	* <h3>Conditionals (if-else)</h3>
+	* <h3>While loop</h3>
+	* <h3>For loop</h3>
+	* <h3>Switch case</h3>
 
 ## Why Javascript? We want high performance web sites!
 

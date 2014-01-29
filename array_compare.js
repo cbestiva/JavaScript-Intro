@@ -51,6 +51,7 @@ if(0) { // Try: 0, "", undefined, null, false. Anything else is true!
 // ##### JS Object Literals are reference types
 
 var mickey_mouse = {
+
                     "first_name": "Micky",
                     "last_name": "Mouse",
                     "address": "Disneyland"
@@ -64,6 +65,7 @@ var mickey = {
 console.log(mickey_mouse.first_name); // Access an object literal value with ".key" syntax!
 
 console.log(mickey_mouse["first_name"]); // This also works.
+
 
 console.log("Are JS Object Literals values? ")
 if(mickey_mouse === mickey ) {
